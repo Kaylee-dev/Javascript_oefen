@@ -7,33 +7,39 @@ Software Developer
 <html>
 	<body>
 		<script>
-			const TAFEL = prompt("Welke tafel wilt u uitrekenen?");
-
-			const anwser1 = 1 * TAFEL;
-			const anwser2 = 2 * TAFEL;
-			const anwser3 = 3 * TAFEL;
-			const anwser4 = 4 * TAFEL;
-			const anwser5 = 5 * TAFEL;
-			const anwser6 = 6 * TAFEL;
-			const anwser7 = 7 * TAFEL;
-			const anwser8 = 8 * TAFEL;
-			const anwser9 = 9 * TAFEL;
-			const anwser10 = 10 * TAFEL;
-			
-			document.write(anwser1 + "<br />" + anwser2 + "<br />" + anwser3 + "<br />" + anwser4 + "<br />" + anwser5 + "<br />" + anwser6 + "<br />" + anwser7 + "<br />" + anwser8 + "<br />" + anwser9 + "<br />" + anwser10 + "<br /><br />" ); 
 
 
-			const Sum = prompt("Voer een getal in voor een berekening");
+			const TAFEL = prompt("Welke tafel wilt u uitrekenen?"); //Hier stel ik de vraag 'Welke tafel wilt u uitrekenen?' doormiddel van een prompt. En wat de persoon invult pakt hij later als de const TAFEL.
 
-			var calculation1 = Sum + 6;
+			var anwser1 = 1 * TAFEL;
+			var anwser2 = 2 * TAFEL;
+			var anwser3 = 3 * TAFEL;
+			var anwser4 = 4 * TAFEL;
+			var anwser5 = 5 * TAFEL;
+			var anwser6 = 6 * TAFEL;
+			var anwser7 = 7 * TAFEL;
+			var anwser8 = 8 * TAFEL;
+			var anwser9 = 9 * TAFEL;
+			var anwser10 = 10 * TAFEL;
+			//Vraag: hoe kun je er op een handige manier voor zorgen dat je gemakkelijk een ander tafel kunt uitrekenen, zonder dat je al te veel wijzigingen in de code moet doen???? 
+			//Doordat je een const TAFEL heb aangemaakt kan je een lijst maken met de * sommen die je wilt gebruiken. Dus 1 * TAFEL pakt hij het getal wat iemand heeft ingevuld bij de prompt.
+
+
+			document.write(anwser1 + "<br />" + anwser2 + "<br />" + anwser3 + "<br />" + anwser4 + "<br />" + anwser5 + "<br />" + anwser6 + "<br />" + anwser7 + "<br />" + anwser8 + "<br />" + anwser9 + "<br />" + anwser10 + "<br /><br />" ); //Met document.write zet je tekst neer op je pagina. Met de <br /> zorg je voor een nieuwe regel (enter). Met + voeg je alles samen. De const anwser1 t/m anwser 10 zijn de uitkomsten van de * sommen.
+
+
+			const SUM = prompt("Voer een getal in voor een berekening"); //Ik heb een const SUM aangemaakt die doormiddel van een prompt vraagt wat voor getal je wilt gebruiken om een berekening te maken.
+
+			var calculation1 = SUM + 6;
 			var calculation2 = calculation1 * 10;
 			var calculation3 = calculation2 / 5;
 			var calculation4 = calculation3 - 12;
+			//Hier maak ik variabelen aan die telkens een nieuwe som maken, dus bijv: var calculation2 die pakt calculation1 * 10, en daar van het antwoord staat weer in de volgende var.
 			
-			document.write(Sum +" + 6 = " + calculation1 + "<br />"+calculation1+" * 10 = " + calculation2 + "<br />"+calculation2+" / 5 = " + calculation3 + "<br />"+calculation3+" - 12 = " + calculation4);
+			document.write(SUM +" + 6 = " + calculation1 + "<br />"+calculation1+" * 10 = " + calculation2 + "<br />"+calculation2+" / 5 = " + calculation3 + "<br />"+calculation3+" - 12 = " + calculation4);
 			//Het is mij opgevallen dat bij +6 de 6 achter het getal komt te staan ipv dat de getallen bij elkaar opgeteld worden.
 			
-		</script>
 
+		</script>
 	</body>
 </html>

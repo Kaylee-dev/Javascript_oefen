@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 	<body>
 		<script>
 
-				alert("Welkom bij pizza calculator");
+				alert("Welkom bij de Pizza Calculator!");
 
 				const NUMBERPIZZASMALL = prompt("Hoeveel small pizza's wilt u?");
 				const NUMBERPIZZAMEDIUM = prompt("Hoeveel medium pizza's wilt u?");
@@ -18,8 +20,10 @@
 				const MEDIUMPIZZAPRICE = NUMBERPIZZAMEDIUM * MEDIUMPIZZA;
 				const LARGEPIZZAPRICE = NUMBERPIZZALARGE * LARGEPIZZA;
 
+				const TOTALPRICE = SMALLPIZZAPRICE + MEDIUMPIZZAPRICE + LARGEPIZZAPRICE
 
-				document.write("<b>Small pizza's</b> x " + NUMBERPIZZASMALL + " = " + SMALLPIZZAPRICE + "<br /><b>Medium pizza's</b> x " + NUMBERPIZZAMEDIUM + " = " + MEDIUMPIZZAPRICE + "<br /><b>Large pizza's</b> x " + NUMBERPIZZALARGE + " = " + LARGEPIZZAPRICE);
+
+				document.write("<b>Small pizza's</b> x " + NUMBERPIZZASMALL + " = €" + SMALLPIZZAPRICE + "<br/ >" + "<br /><b>Medium pizza's</b> x " + NUMBERPIZZAMEDIUM + " = €" + MEDIUMPIZZAPRICE + "<br/ >" + "<br /><b>Large pizza's</b> x " + NUMBERPIZZALARGE + " = €" + LARGEPIZZAPRICE + "<br />" + "<br />" + "<b>Totaal prijs:</b>" + " €" + TOTALPRICE);
 
 
 			
