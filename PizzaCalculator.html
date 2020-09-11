@@ -5,12 +5,12 @@
 	<body>
 		<script>
 
-				alert("Welkom bij de Pizza Calculator!");
+				alert("Welkom bij de Pizza Calculator!");//Hij maakt een popup met de string 'Welkom bij Pizza Calculator'
 
-				const NUMBERPIZZASMALL = prompt("Hoeveel small pizza's wilt u?");
+				const NUMBERPIZZASMALL = prompt("Hoeveel small pizza's wilt u?"); 
 				const NUMBERPIZZAMEDIUM = prompt("Hoeveel medium pizza's wilt u?");
 				const NUMBERPIZZALARGE = prompt("Hoeveel large pizza's wilt u?");	
-
+				//Hier heb ik weer constanten aangemaakt
 
 				const SMALLPIZZA = 5.99;
 				const MEDIUMPIZZA = 6.99;
@@ -20,14 +20,12 @@
 				const MEDIUMPIZZAPRICE = NUMBERPIZZAMEDIUM * MEDIUMPIZZA;
 				const LARGEPIZZAPRICE = NUMBERPIZZALARGE * LARGEPIZZA;
 
-				const TOTALPRICE = SMALLPIZZAPRICE + MEDIUMPIZZAPRICE + LARGEPIZZAPRICE
+				const TOTALPRICE = SMALLPIZZAPRICE + MEDIUMPIZZAPRICE + LARGEPIZZAPRICE;
 
 
-				document.write("<b>Small pizza's</b> x " + NUMBERPIZZASMALL + " = €" + SMALLPIZZAPRICE + "<br/ >" + "<br /><b>Medium pizza's</b> x " + NUMBERPIZZAMEDIUM + " = €" + MEDIUMPIZZAPRICE + "<br/ >" + "<br /><b>Large pizza's</b> x " + NUMBERPIZZALARGE + " = €" + LARGEPIZZAPRICE + "<br />" + "<br />" + "<b>Totaal prijs:</b>" + " €" + TOTALPRICE);
+				document.write("<b>Small pizza</b> x " + NUMBERPIZZASMALL + " = €" + SMALLPIZZAPRICE + "<br/ >" + "<br /><b>Medium pizza</b> x " + NUMBERPIZZAMEDIUM + " = €" + MEDIUMPIZZAPRICE + "<br/ >" + "<br /><b>Large pizza</b> x " + NUMBERPIZZALARGE + " = €" + LARGEPIZZAPRICE + "<br />" + "<br />" + "<br />" + "<b>Totaal prijs:</b>" + " €" + TOTALPRICE);
 
 
-			
-			
 		</script>
 
 	</body>
