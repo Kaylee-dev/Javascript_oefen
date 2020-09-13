@@ -7,23 +7,26 @@
 
 				alert("Welkom bij de Pizza Calculator!");//Hij maakt een popup met de string 'Welkom bij Pizza Calculator'
 
-				const NUMBERPIZZASMALL = prompt("Hoeveel small pizza's wilt u?"); 
-				const NUMBERPIZZAMEDIUM = prompt("Hoeveel medium pizza's wilt u?");
-				const NUMBERPIZZALARGE = prompt("Hoeveel large pizza's wilt u?");	
-				//Hier heb ik weer constanten aangemaakt
+				const NUMBERPIZZASMALL = prompt("Hoeveel small pizza's wilt u? (Prijs is €5,99)"); 
+				const NUMBERPIZZAMEDIUM = prompt("Hoeveel medium pizza's wilt u? (Prijs is €6,99) ");
+				const NUMBERPIZZALARGE = prompt("Hoeveel large pizza's wilt u? (Prijs is €11,99) ");	
+				//Hier heb ik weer constanten aangemaakt. En er worden vragen gesteld en die kan je invullen met hoeveel pizza's je wilt, dat stopt die dan weer in de const en die kan ik later weer gebruiken.
 
 				const SMALLPIZZA = 5.99;
 				const MEDIUMPIZZA = 6.99;
 				const LARGEPIZZA = 11.99;
+				//Hier zorg ik vo0r de prijzen ook doormiddel van constanten.
 
 				const SMALLPIZZAPRICE = NUMBERPIZZASMALL * SMALLPIZZA;
 				const MEDIUMPIZZAPRICE = NUMBERPIZZAMEDIUM * MEDIUMPIZZA;
 				const LARGEPIZZAPRICE = NUMBERPIZZALARGE * LARGEPIZZA;
 
 				const TOTALPRICE = SMALLPIZZAPRICE + MEDIUMPIZZAPRICE + LARGEPIZZAPRICE;
+				//Hier zorg ik er voor dat wat iemand invult bij hoeveel pizza's ze willen er een keer som word gemaakt met de pizza prijzen.
 
 
 				document.write("<b>Small pizza</b> x " + NUMBERPIZZASMALL + " = €" + SMALLPIZZAPRICE + "<br/ >" + "<br /><b>Medium pizza</b> x " + NUMBERPIZZAMEDIUM + " = €" + MEDIUMPIZZAPRICE + "<br/ >" + "<br /><b>Large pizza</b> x " + NUMBERPIZZALARGE + " = €" + LARGEPIZZAPRICE + "<br />" + "<br />" + "<br />" + "<b>Totaal prijs:</b>" + " €" + TOTALPRICE);
+				//Met document.write zet je tekst neer op je pagina. Met de <br /> zorg je voor een nieuwe regel (enter). Met + voeg je alles samen. Hij heeft alles uitgerekend wat iemand heeft ingevuld en dat laat hij zien.
 
 
 		</script>
